@@ -120,7 +120,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 3. **点光源**：位置固定，颜色为纯白光 (1.0, 1.0, 1.0)
 4. **背景**：浅灰色
 
-   <img width="204" height="160" alt="cg_lab4" src="https://github.com/user-attachments/assets/74baf13b-2e6c-4051-8bdf-65ca8de28a3f" />
+   <img width="404" height="360" alt="cg_lab4" src="https://github.com/user-attachments/assets/74baf13b-2e6c-4051-8bdf-65ca8de28a3f" />
 
 
 
@@ -141,7 +141,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
    - **紫色圆锥**：从顶点 `(1.2, 1.2, 0.0)` 调整到 `(1.0, 1.0, 0.0)`，底面从 y=-1.4 调整到 y=-1.2，半径从 1.2 调整到 1.0
    - **效果**：几何体更加靠近，增强了遮挡关系，阴影效果更加明显
 
-     <img width="204" height="160" alt="cg_lab4 3" src="https://github.com/user-attachments/assets/b513498a-ddff-448d-82b0-1431fb2daf5c" />
+     <img width="404" height="360" alt="cg_lab4 3" src="https://github.com/user-attachments/assets/b513498a-ddff-448d-82b0-1431fb2daf5c" />
 
 
 
@@ -150,7 +150,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 - **硬阴影**：物体遮挡区域会显示为阴影，增强场景的真实感和深度感
 
 
-  <img width="204" height="160" alt="cg_lab4 4" src="https://github.com/user-attachments/assets/050126df-a094-4b48-b562-a6117b908077" />
+     <img width="404" height="360" alt="cg_lab4 4" src="https://github.com/user-attachments/assets/050126df-a094-4b48-b562-a6117b908077" />
 
 
 ### 渲染效果对比
@@ -179,7 +179,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 ## 📝 实验要求
 
 ### 基础任务
-1. 构建代码驱动的三维场景（球体和圆锥）
+1. 构建代码驱动的三维场景
 2. 实现光线求交与深度测试
 3. 编写 Phong 着色器
 4. 完成 UI 交互面板
@@ -189,6 +189,6 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 2. **硬阴影**：实现基于阴影射线的硬阴影效果
 
 ## 注意事项
-- **向量归一化**：参与点乘的 \(\mathbf{N}\)、\(\mathbf{L}\)、\(\mathbf{V}\) 必须是单位向量
+- **向量归一化**：参与点乘的N,L,V必须是单位向量
 - **负值处理**：使用 `ti.max(0.0, dot_product)` 截断负值，避免非法运算
 - **颜色限制**：使用 `ti.math.clamp(color, 0.0, 1.0)` 将颜色强制限制在合法区间内
