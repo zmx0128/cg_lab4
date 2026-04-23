@@ -123,8 +123,6 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
    <img width="404" height="360" alt="cg_lab4" src="https://github.com/user-attachments/assets/74baf13b-2e6c-4051-8bdf-65ca8de28a3f" />
 
 
-
-
 1. **光源颜色影响**：
    - 当光源颜色设置为非白色时（例如 `[2.0, 3.0, 1.0]`），物体颜色会被光源颜色影响
    - 例如，紫色圆锥在黄绿色光源下会变成粉色
@@ -142,7 +140,6 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
    - **效果**：几何体更加靠近，增强了遮挡关系，阴影效果更加明显
 
      <img width="404" height="360" alt="cg_lab4 3" src="https://github.com/user-attachments/assets/b513498a-ddff-448d-82b0-1431fb2daf5c" />
-
 
 
 ### 高级模式效果
@@ -175,18 +172,6 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 
 1. **Python 3.8+**
 2. **Taichi 1.7.4+**：用于并行计算和 GUI 渲染
-
-## 📝 实验要求
-
-### 基础任务
-1. 构建代码驱动的三维场景
-2. 实现光线求交与深度测试
-3. 编写 Phong 着色器
-4. 完成 UI 交互面板
-
-### 选做内容
-1. **Blinn-Phong 模型升级**：实现 Blinn-Phong 光照模型
-2. **硬阴影**：实现基于阴影射线的硬阴影效果
 
 ## 注意事项
 - **向量归一化**：参与点乘的N,L,V必须是单位向量
