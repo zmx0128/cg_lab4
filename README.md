@@ -190,9 +190,3 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 - **向量归一化**：参与点乘的 \(\mathbf{N}\)、\(\mathbf{L}\)、\(\mathbf{V}\) 必须是单位向量
 - **负值处理**：使用 `ti.max(0.0, dot_product)` 截断负值，避免非法运算
 - **颜色限制**：使用 `ti.math.clamp(color, 0.0, 1.0)` 将颜色强制限制在合法区间内
-
-
-
-3. **性能优化**：
-   - 硬阴影计算会增加渲染时间，因为需要为每个交点发射阴影射线
-   - 但通过合理的算法实现，仍然可以保持实时交互的性能
