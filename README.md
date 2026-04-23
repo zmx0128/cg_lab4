@@ -118,7 +118,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
 3. **点光源**：位置固定，颜色为纯白光 (1.0, 1.0, 1.0)
 4. **背景**：浅灰色
 
-   <img width="804" height="660" alt="cg_lab4" src="https://github.com/user-attachments/assets/74baf13b-2e6c-4051-8bdf-65ca8de28a3f" />
+   <img width="404" height="360" alt="cg_lab4" src="https://github.com/user-attachments/assets/74baf13b-2e6c-4051-8bdf-65ca8de28a3f" />
 
 
 
@@ -128,7 +128,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
    - 例如，紫色圆锥在黄绿色光源下会变成粉色
    - **建议**：使用白色光源 `[1.0, 1.0, 1.0]` 以保持物体的原始颜色
   
-     <img width="804" height="660" alt="cg_lab4 2" src="https://github.com/user-attachments/assets/cc55b7bd-ac5d-4f47-808c-b32a972b443d" />
+     <img width="404" height="360" alt="cg_lab4 2" src="https://github.com/user-attachments/assets/cc55b7bd-ac5d-4f47-808c-b32a972b443d" />
 
 2. **光源位置调整**：
    - 原始位置：`(2.0, 3.0, 4.0)`（右侧）
@@ -139,7 +139,7 @@ $$I_{specular} = K_s \times \max(0, \mathbf{N} \cdot \mathbf{H})^n \times C_{lig
    - **紫色圆锥**：从顶点 `(1.2, 1.2, 0.0)` 调整到 `(1.0, 1.0, 0.0)`，底面从 y=-1.4 调整到 y=-1.2，半径从 1.2 调整到 1.0
    - **效果**：几何体更加靠近，增强了遮挡关系，阴影效果更加明显
 
-     <img width="804" height="660" alt="cg_lab4 3" src="https://github.com/user-attachments/assets/b513498a-ddff-448d-82b0-1431fb2daf5c" />
+     <img width="404" height="360" alt="cg_lab4 3" src="https://github.com/user-attachments/assets/b513498a-ddff-448d-82b0-1431fb2daf5c" />
 
 
 
