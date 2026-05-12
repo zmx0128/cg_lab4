@@ -30,12 +30,11 @@ cg_lab4/
 ### 1. 创建并激活虚拟环境
 
 ```bash
-# 使用 uv 创建虚拟环境
-uv init
+# 创建环境，指定 Python 3.12
+conda create -n cg_env python=3.12 -y
 
-# 激活虚拟环境
-source .venv/bin/activate  # Linux/Mac
-.venv\Scripts\activate     # Windows
+# 激活环境
+conda activate cg_env 
 ```
 
 ### 2. 安装依赖
@@ -44,7 +43,7 @@ source .venv/bin/activate  # Linux/Mac
 
 ```bash
 # 安装依赖
-uv add taichi
+pip install taichi
 ```
 
 ## 🎮 使用方法
